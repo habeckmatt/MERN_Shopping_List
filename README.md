@@ -1,27 +1,42 @@
-#Project title
-A little info about your project and/ or overview that explains what the project is about.
+# Project title
+This is a full-stack CRUD app which is able to send, receive, update, and delete data created in the UI and then
+pushed to the database. It is able to display items you've created in the UI and you can remove them by clicking the red 'X'
+after you no longer need it.
 
-#Motivation
-A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
+# Motivation
+This project challenged me to learn new technologies which included: NodeJS, Express and MongoDB. I enjoyed learning the MERN
+stack and I would definitely make apps utilizing that stack in the future.
 
-#Screenshots
+# Screenshots
 Include logo/demo screenshot etc.
 
-#Tech/framework used
+# Tech/framework used
 
-**Built with**
+**Built with**  
 
-React
+* [React](https://github.com/facebook/react)
 # Features
-What makes your project stand out?
+The app is able to save the items you have put onto your shopping list.
 
 # Code Example
-Show what the library does as concisely as possible, developers should be able to figure out how your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+    const express = require('express');
+    const router = express.Router();
+
+    // Item model
+    const Item = require('../../models/Item');
+
+    // @route  GET api/items
+    // @desc   Get All Items
+    // @access Public
+
+    router.get('/', (req, res) => {
+        Item.find()
+            .sort({ date: -1 })
+            .then(items => res.json(items))
+    });
 
 # Installation
-Provide step by step series of examples and explanations about how to get a development env running.
+npm install MERN_Shopping_List
 
 # License
-A short snippet describing the license (MIT, Apache etc)
-
 MIT © Matt Habeck
