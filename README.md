@@ -8,7 +8,7 @@ This project challenged me to learn new technologies which included: NodeJS, Exp
 stack and I would definitely make apps utilizing that stack in the future.
 
 # Screenshots
-Include logo/demo screenshot etc.
+![MERN Shopping List](MERN_shopping_list.jpg)
 
 # Tech/framework used
 
