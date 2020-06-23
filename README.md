@@ -1,4 +1,4 @@
-# Project title
+# Shopping List
 This is a full-stack CRUD app which is able to send, receive, update, and delete data created in the UI and then
 pushed to the database. It is able to display items you've created in the UI and you can remove them by clicking the red 'X'
 after you no longer need it.
